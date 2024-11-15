@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #1a1a1d;
+            color: #f0e8f7;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .services-section h2 {
+            font-size: 3rem;
+            color: #eedcdc;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .service-card {
+            background: rgba(36, 6, 78, 0.9);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #e2ebf2;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #edf7f8;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #0818a8, #df64bc);
+            border: none;
+            padding: 10px 25px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.7;
+            filter: brightness(0.8);
+        }
+
+        .icon-style {
+            font-size: 2rem;
+            color: #df64bc;
+            margin-bottom: 15px;
+        }
+
+        /* Fade-in animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            background-color: #101010;
+            color: #bfbfbf;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer .social-icon {
+            font-size: 1.5rem;
+            color: #df64bc;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer .social-icon:hover {
+            color: #f0e8f7;
+        }
+
+        /* Style Links within Buttons */
+        .btn-primary a {
+            color: white;
+            text-decoration: none;
+        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+
+
+/* Header and Navigation */
+.NOM {
+    color: aliceblue;
+    font-size: 30px;
+   background: linear-gradient(to right, #0818a8, #df64bc);
+    padding: 10px 20px;
+    border-radius: 50px;
+   
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(39, 3, 73);
+  
+    }
+    
+
+   
+
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+li {
+    font-size: 18px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+   
+}
+
+li:hover a {
+    background-color: rgb(90, 35, 149);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="header">
+        <h1 class="NOM"><a href="#">DOUAE-AHIM</a></h1>
+        <ul>
+           <li><a href="../index.html">Accueil</a></li>
+            <li><a href="cv.html">Mon CV</a></li>
+            <li><a href="https://www.facebook.com/douae.ahim?mibextid=ZbWKwL" target="_blank" >Contactez-moi</a></li>
+            <li><a href="cv.html" >Services</a></li>
+        </ul>
+    </nav>
+    </header>
+    <video autoplay muted loop id="background-video">
+        <source src="WhatsApp Video 20.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <section class="services-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">My Developer Services</h2>
+            <p class="text-center mb-5">Providing high-quality development solutions tailored to your needs.</p>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <i class="fas fa-desktop icon-style"></i>
+                            <h5 class="card-title">Front-End Development</h5>
+                            <p class="card-text">Creating interactive, responsive, and visually appealing user interfaces using HTML, CSS, and JavaScript.</p>
+                            <button class="btn btn-primary"><a href="https://youtu.be/WG5ikvJ2TKA?si=UiWvaBWGGu-ZlahX">Learn More</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <i class="fas fa-server icon-style"></i>
+                            <h5 class="card-title">Back-End Development</h5>
+                            <p class="card-text">Building robust and scalable server-side applications with Node.js and other back-end technologies.</p>
+                            <button class="btn btn-primary"><a href="https://youtu.be/tN6oJu2DqCM?si=iYOFYmaph71EHeu-">Learn More</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <i class="fas fa-code icon-style"></i>
+                            <h5 class="card-title">Full-Stack Development</h5>
+                            <p class="card-text">Handling both front-end and back-end tasks to provide complete solutions from start to finish.</p>
+                            <button class="btn btn-primary"><a href="https://youtu.be/5-MLMzbUlPY?si=JG8k73eOe1H9beJ5">Learn More</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Connect with me on social media:</p>
+        <a href="https://www.facebook.com/douae.ahim?mibextid=ZbWKwL" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+
+        <a href="https://www.linkedin.com/in/douaa-ahim-00959b332/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/douaeahim" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+        <p>© 2024 My Developer Services. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript and FontAwesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"> </script>
+</body>
+</html>

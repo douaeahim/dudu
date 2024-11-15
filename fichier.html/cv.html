@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Développeur Web</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        body.loaded {
+            opacity: 1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid #00aaff;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #777;
+        }
+
+        .section h2 {
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 2px solid #00aaff;
+            padding-bottom: 5px;
+        }
+
+        .section-content {
+            margin-top: 10px;
+        }
+
+        .skills ul, .experience ul, .education ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li, .experience ul li, .education ul li {
+            padding: 5px 0;
+        }
+
+        .experience ul li .job-title {
+            font-weight: bold;
+        }
+
+        .experience ul li .company {
+            color: #777;
+        }
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+
+
+/* Header and Navigation */
+.NOM {
+    color: aliceblue;
+    font-size: 2px;
+   background: linear-gradient(to right, #0818a8, #df64bc);
+    padding: 2px 2px;
+    border-radius: 50px;
+   
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(39, 3, 73);
+  
+    }
+    
+
+   
+
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+li {
+    font-size: 18px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+   
+}
+
+li:hover a {
+    background-color: rgb(90, 35, 149);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+        .progress-bar {
+            background-color: #ddd;
+            border-radius: 5px;
+            height: 25px;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #00aaff;
+            border-radius: 5px;
+            transition: width 1s ease-in-out;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="loaded">
+    <header>
+        <nav class="header">
+            <h1 class="NOM"><a href="#">DOUAE-AHIM</a></h1>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#profile">Profil</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#education">Éducation</a></li>
+                <li><a href="#languages">Langues</a></li>
+                <li><a href="sevices.html">services</a></li>
+                <li><a href="cv.pdf">telechargement mon cv</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="profile" class="section">
+            <div class="header">
+                <img src="img9.webp" alt="Photo de Douae Ahim">
+                <h1>Douae Ahim</h1>
+                <p>Développeur Web - Casablanca, Maroc</p>
+                <p>Email: douae@gmail.com | Téléphone: 0681022693</p>
+            </div>
+
+            <h2>Profil</h2>
+            <div class="section-content">
+                <p>Développeur web passionné avec une expérience en HTML, CSS, JavaScript et jQuery. Capable de concevoir et développer des solutions numériques élégantes et efficaces. Compétent dans la création de sites web interactifs et responsive.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <h2>Compétences</h2>
+            <div class="section-content">
+                <ul>
+                    <li>HTML, CSS, JavaScript, jQuery</li>
+                    <li>Développement Responsive</li>
+                    <li>Expérience avec les CMS (WordPress)</li>
+                    <li>Git et gestion de version</li>
+                    <li>Principes de design UI/UX</li>
+                </ul>
+
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+                <p>HTML, CSS</p>
+
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%"></div>
+                </div>
+                <p>JavaScript, jQuery</p>
+            </div>
+        </section>
+
+        <section id="experience" class="section experience">
+            <h2>Expérience Professionnelle</h2>
+            <div class="section-content">
+                <ul>
+                    <li>
+                        <span class="job-title">Développeur Front-End</span> - <span class="company">Agence Web XYZ</span> (2023 - Présent)
+                        <p>Développement d'interfaces utilisateurs dynamiques et optimisées en HTML, CSS, et JavaScript.</p>
+                    </li>
+                    <li>
+                        <span class="job-title">Stage Développement Web</span> - <span class="company">Tech Startup ABC</span> (2022)
+                        <p>Assistance dans la conception de sites web responsive et gestion des mises à jour de contenu sur WordPress.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="section education">
+            <h2>Éducation</h2>
+            <div class="section-content">
+                <ul>
+                    <li>
+                        <span class="degree">Diplôme en Développement Numérique</span> - OFPPT Hassania, Casablanca (2024 - 2026)
+                    </li>
+                    <li>
+                        <span class="degree">Baccalauréat en Sciences de la Vie et de la Terre</span> - Lycée may ziada, Casablanca (2024)
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="languages" class="section">
+            <h2>Langues</h2>
+            <div class="section-content">
+                <p>Français : Courant</p>
+                <p>Anglais : Professionnel</p>
+                <p>Arabe : professinnel</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
